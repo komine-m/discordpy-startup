@@ -199,6 +199,7 @@ def read_charalist():
                 Clist[i][2] = x[3*i+2]
     return Clist
 
+"""
 def Judge_Matching(num):
     if 0.985 < num:
         return True
@@ -493,6 +494,7 @@ def record(DC1, DC2, DC3, DC4, DC5, OC1, OC2, OC3, OC4, OC5):
     mes += "新しい編成を記録したよ\n"
     return mes
 
+"""
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
@@ -526,7 +528,7 @@ async def on_message(message):
         if len(party)==6:
             result = search(party[1],party[2],party[3],party[4],party[5])
             await message.channel.send(result)
-    # 画像利用検索
+"""    # 画像利用検索
     if message.content.startswith('/search'):
         if message.attachments:
             for attachment in message.attachments:
@@ -577,5 +579,6 @@ async def on_message(message):
         if len(party)==11:
             result = record(party[1],party[2],party[3],party[4],party[5],party[6],party[7],party[8],party[9],party[10])
             await message.channel.send(result)
-    
+"""
+
 bot.run(token)
