@@ -90,10 +90,11 @@ def mtime(hp,dam):
 direc_path = os.getcwd()
 #direc_path = "C:\\Users\\komin\\Documents\\python\\pricone"
 #file_name1 = "record.dat"
-file_name2 = "character_list.dat"
+#file_name2 = "character_list.dat"
 #file_path = direc_path +"\\database\\"+ file_name1
 file_path = "record.dat"
-chara_list = direc_path +"\\database\\"+ file_name2
+#chara_list = direc_path +"\\database\\"+ file_name2
+chara_list = "character_list.dat"
 #win_img = direc_path + "\\chara_icon\\win.jpg"
 #lose_img = direc_path + "\\chara_icon\\lose.jpg"
 file_path2 = "SC.png"
