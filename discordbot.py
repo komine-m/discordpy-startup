@@ -527,19 +527,19 @@ async def on_message(message):
     # アリーナ自作データベースの検索
     if message.content.startswith('/ar'):
         party = message.content.split()
-        await message.channel.send(party[1])
+#        await message.channel.send(party[1])
         if len(party)==6:
-            await message.channel.send(party[1])            
+ #           await message.channel.send(party[1])            
             result = search(party[1],party[2],party[3],party[4],party[5])
             await message.channel.send(result)
-"""    # 画像利用検索
+    # 画像利用検索
     if message.content.startswith('/search'):
         if message.attachments:
             for attachment in message.attachments:
                 if attachment.url.endswith(("png","jpg","jpeg")):
                     await message.channel.send("画像を保存するよ")
                     await attachment.save("SC.png")
-                    DCs, DCs_f = read_BA_SC()
+"""                    DCs, DCs_f = read_BA_SC()
                     for i in range(len(DCs_f)):
                         if(DCs_f[i] == 0):
                             await message.channel.send(str(i+1)+"番目の防衛キャラはだれー?")
