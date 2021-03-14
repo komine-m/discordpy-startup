@@ -527,6 +527,7 @@ async def on_message(message):
     # アリーナ自作データベースの検索
     if message.content.startswith('/ar'):
         party = message.content.split()
+        await message.channel.send(party[1])
         if len(party)==6:
             result = search(party[1],party[2],party[3],party[4],party[5])
             await message.channel.send(result)
