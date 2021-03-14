@@ -529,6 +529,7 @@ async def on_message(message):
         party = message.content.split()
         await message.channel.send(party[1])
         if len(party)==6:
+            await message.channel.send(party[1])            
             result = search(party[1],party[2],party[3],party[4],party[5])
             await message.channel.send(result)
 """    # 画像利用検索
