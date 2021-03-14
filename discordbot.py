@@ -3,9 +3,9 @@ import os
 import traceback
 import math
 import datetime
-from PIL import ImageGrab
-from PIL import Image
-import cv2
+#from PIL import ImageGrab
+#from PIL import Image
+#import cv2
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
